@@ -1,0 +1,33 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fde8e9;
+}
+
+h1{
+    color: #9909b3;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 60px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.square,#play{
+    padding: 30px;
+    margin: 50px 10px;
+    background-color: #e3bac6;
+}
+
+#play{
+    display: none;
+}

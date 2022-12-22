@@ -3,20 +3,22 @@ let reset = document.getElementById("reset");
 
 
 submit.onclick = function(){
-    document.getElementById("play").style.display = "block";
+    
+
     let player1 = [];
     let player2 = [];
-
     player1 [0] = document.getElementById("player1").value;
     player2 [0] = document.getElementById("player2").value;
     
 
-    if (player1==null || player1==="" || player2==null || player2===""){
+    if (player1[0]==null || player1[0]==="" || player2[0]==null || player2[0]===""){
         alert("Non hai inserito tutti i nomi")
     }
 
 
     else{
+
+        document.getElementById("play").style.display = "block";
 
         player1 [1] = Math.floor(Math.random() * 6) + 1;
         player2 [1] = Math.floor(Math.random() * 6) + 1;
@@ -47,6 +49,7 @@ submit.onclick = function(){
             userWin.textContent = "C'è stato un pareggio! Tira dinuovo i dadi";
             winner.append(userWin);
         }
+        
     }
 }
 
